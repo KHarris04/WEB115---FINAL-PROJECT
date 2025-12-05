@@ -63,7 +63,7 @@ function renderTasks() {
                 <p ${task.isCompleted ? 'style="text-decoration: line-through; opacity: 0.6;"' : ""}>
                     <strong>${task.name}</strong>
 
-		   //Cosmetic Priority Emoji's
+		            //Cosmetic Priority Emojis
                     <span class="badge 
                         ${task.priority === "High" ? "badge-high" :
                          task.priority === "Medium" ? "badge-medium" :
@@ -115,4 +115,5 @@ function deleteTask(id) {
 
     console.log(JSON.stringify(tasks));
     renderTasks();
+
 }

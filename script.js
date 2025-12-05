@@ -58,8 +58,7 @@ function renderTasks() {
                       onclick="toggleImportant(${task.id})">
                       ${task.isImportant ? "⭐" : "☆"}
                 </span>
-
-
+				
                 <p ${task.isCompleted ? 'style="text-decoration: line-through; opacity: 0.6;"' : ""}>
                     <strong>${task.name}</strong>
 
@@ -116,4 +115,5 @@ function deleteTask(id) {
     renderTasks();
 
 }
+
 

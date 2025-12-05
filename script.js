@@ -49,7 +49,7 @@ function renderTasks() {
         if (task.priority === "Medium") taskDiv.style.borderLeftColor = "orange";
         if (task.priority === "Low") taskDiv.style.borderLeftColor = "green";
 
-	//Cosmetic Importance star
+	//Cosmetic Importance star + Cosmetiv Priority Emojis
         taskDiv.innerHTML = `
             <div class="info">
 
@@ -63,7 +63,6 @@ function renderTasks() {
                 <p ${task.isCompleted ? 'style="text-decoration: line-through; opacity: 0.6;"' : ""}>
                     <strong>${task.name}</strong>
 
-		            //Cosmetic Priority Emojis
                     <span class="badge 
                         ${task.priority === "High" ? "badge-high" :
                          task.priority === "Medium" ? "badge-medium" :
@@ -117,3 +116,4 @@ function deleteTask(id) {
     renderTasks();
 
 }
+

@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f0f0f0;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+
+form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+input, select, button {
+    padding: 8px;
+    font-size: 14px;
+}
+
+button {
+    cursor: pointer;
+    background: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+
+#taskmanager {
+    max-width: 700px;
+    margin: auto;
+}
+
+.task {
+    background: white;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 8px solid transparent;
+    transition: 0.3s;
+}
+
+
+.star {
+    cursor: pointer;
+    font-size: 22px;
+    margin-right: 10px;
+    transition: 0.15s;
+}
+
+.star.important {
+    color: gold;
+}
+
+.star.not-important {
+    color: #bbb;
+}
+
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    color: white;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.badge-high {
+    background-color: red;
+}
+
+.badge-medium {
+    background-color: orange;
+}
+
+.badge-low {
+    background-color: green;
+}
+
+
+.delete-btn {
+    background: crimson;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}

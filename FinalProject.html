@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TaskFlow Solutions – Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>TaskFlow Solutions – Task Manager</h1>
+
+    <form id="taskForm">
+        <input type="text" id="taskName" placeholder="Enter task name..." required>
+
+        <select id="taskPriority">
+            <option value="High">High Priority</option>
+            <option value="Medium">Medium Priority</option>
+            <option value="Low">Low Priority</option>
+        </select>
+
+        <label>
+            <input type="checkbox" id="taskImportant"> Important
+        </label>
+
+        <label>
+            <input type="checkbox" id="taskCompleted"> Completed
+        </label>
+
+        <button type="submit">Add Task</button>
+    </form>
+
+    <h2>Your Tasks</h2>
+    <div id="taskmanager"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
